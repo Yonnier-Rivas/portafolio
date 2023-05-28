@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}   
+
+body{
+    background: #e0e0e0;
+}
+
+h1{
+    text-align: center;
+    position: relative;
+    margin: 50px auto;
+    font-size: 50px;
+    background: linear-gradient(#1497be, #1c2aec);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -moz-background-clip: text;
+    animation: text 5s linear infinite;
+}
+
+@keyframes text{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter:  hue-rotate(360deg);
+    }
+} 
+
+.imagenes{
+    width: 80%;
+    margin: 50px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 50px;
+}
+
+.imagenes img{
+    width: 100%;
+    border-radius: 20px;
+	height:auto;
+	object-fit: cover;
+    cursor: pointer;
+    transition: 1s;
+    box-shadow:  8px 8px 21px #acacac,
+             -8px -8px 21px #ffffff;
+}
+
+.imagenes img:hover{
+    transform: scale(1.2);
+}
+
+.full-img{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.63);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+
+.full-img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 40px;
+    height: 40px;
+}
+
+.full-img img{
+    width: 90%;
+    max-width: 900px;
+    border-radius: 40px;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;              
+  }
+  
+
+body::-webkit-scrollbar-track {
+    background: rgba(255, 166, 0, 0);        
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(125, 125, 255);    /* color of the scroll thumb */
+    border-radius: 40px;       /* roundness of the scroll thumb */
+    width: 10px;
+  }

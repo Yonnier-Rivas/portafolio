@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Heebo", Arial, sans-serif;
+}
+
+:root {
+    --clr-black: #080808;
+    --clr-beige: #55e5f83d;
+    --clr-blue: #3ae8ff;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.3rem;
+    background-color: #053d3d3b;
+    color: var(--clr-black);
+    border: 2px solid var(--clr-blue);
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+
+body{
+    background-image: url(./fondo.jpg); 
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.mostrar{
+    margin-bottom: 1rem;
+}
+
+.btn1{
+    line-height: 2;
+    background-color: var(--clr-beige);
+    font-size: 1rem;
+    border-radius: .5rem;
+    width: 10rem;
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 400; 
+}
+
+.btn2{
+    line-height: 2;
+    background-color: var(--clr-beige);
+    font-size: 1rem;
+    border-radius: .5rem;
+    width: 10rem;
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 400; 
+}
+
+.cajon{
+    line-height: 2;
+    background-color:rgba(20, 49, 49, 0.068);
+    font-size: 1rem;
+    border-radius: 1rem; 
+    width: 5rem;
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+ 

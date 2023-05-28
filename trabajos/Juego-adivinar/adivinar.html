@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Yonnier David Rivas Mosquera" />
+    <meta name="copyright" content="Yonnier David Rivas Mosquera" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el número</title>
+    <link rel="stylesheet" href="./interfaz.css">
+</head>
+<body>
+    
+    <header><h1>Adivina el número</h1>
+        <p>Es hora de jugar... Lest go!</p>
+    </header>
+    
+    <main>
+        <h3 class="nombrejugador" id="nombreJugador">
+            Hola Gamer🎮
+        </h3>
+        <br>
+        <p>juego de adivinar un numero aletorio entre 1 y 10</p>
+        <div id="display-numero">😎</div>
+        <br>
+        <div id="display-resultado"></div>
+        <br>
+
+        <input type="text" class="cajon" id="text1"> 
+        <br>
+        <button onclick="playGame()" class="btn1" id="bntjugar">Jugar</button>
+        <br>
+        <button onclick="resertGame()" class="btn2"  id="bntreiniciar">Reiniciar</button>
+
+        <script>
+            let numAle = Math.floor(Math.random() * 10 + 1);
+            let userInput = 0;
+            let intentos = 0;
+            let salida = "Hello World";
+
+            function playGame(){
+                userInput = parseInt(document.getElementById("text1").value);
+                
+                if(userInput !== numAle){
+                    salida = `${userInput} Ops😲, el número que ingresaste no es. Intenta de nuevo.`;
+                    intentos++;
+                }
+
+                if(userInput == numAle){
+                    salida = `${userInput} Acertaste!🥳`;
+                    document.getElementById("display-numero").innerHTML = numAle;
+                }
+                
+                document.getElementById("display-resultado").innerHTML = `${salida}. Este es tu intento número: ${intentos}.`;
+                document.getElementById("text1").select();
+            }
+
+            function resertGame(){
+                numAle = Math.floor(Math.random() * 10 + 1);
+                document.getElementById("display-numero").innerHTML = "😎";
+                document.getElementById("display-resultado").innerHTML = "¡Jueguemos!";
+                document.getElementById("text1").value="";
+                document.getElementById("text1").focus();
+            }
+
+        </script>
+    </main>
+</body>
+</html>

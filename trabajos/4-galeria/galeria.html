@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Yonnier David Rivas Mosquera" />
+    <meta name="copyright" content="Yonnier David Rivas Mosquera" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YRM Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full-img" id="fullImgBox">
+        <img src="imag/f1.jpg" id="fullImg" alt="">
+        <span onclick="closeImg()"><img src="imag/cerrar.svg" alt="" class="cerrar"></span>
+    </div>
+
+    <div class="container">
+        <h1>Super Cars</h1>
+        <div class="imagenes">
+            <img src="imag/f1.jpg" onclick="openFull(this.src)" alt="">
+            <img src="imag/f2.jpg" onclick="openFull(this.src)"  alt="">
+            <img src="imag/f3.jpg" onclick="openFull(this.src)" alt="">
+            <img src="imag/f4.jpg" onclick="openFull(this.src)" alt="">
+            <img src="imag/f5.jpg" onclick="openFull(this.src)" alt="">
+            <img src="imag/f6.jpg" onclick="openFull(this.src)" alt="">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tigera</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    
+    <header>
+        <h1> Piedra, papel o tijera</h1>
+        <p>Es hora de jugar... Lest go!</p>
+    </header>
+
+    <main>
+        <p class="instrucciones" id="instrucciones">
+            ¡El mejor de 3 gana!
+        </p>
+
+        <div class="marcador">
+            <p class="nombre nombre-jugador">Jugador</p>
+            <p class="nombre nombre-computadora">Computadora</p>
+            <p class="puntos">
+               <span id="puntos-usurio">0</span>
+               <span>-</span>
+               <span id="puntos-computadora">0</span>
+            </p>
+        </div>
+        <div class="elegi-tu-ele" id="elegi-tu-ele">
+            <h2>¿Cuál vas a escojer? </h2>
+            <div class="elementos">
+                <button class="elemento" id="piedra✊">✊</button>
+                <button class="elemento" id="papel✋">✋</button>
+                <button class="elemento" id="tijera✌">✌</button>
+            </div>
+        </div>
+        <div class="mensaje disabled" id="mensaje">
+            <p>
+                Escogíste <span class="eleccion" id="eleccion-usuario">papel✋</span><br>
+                y la computadora eligió <span class="eleccion" id="eleccion-computadora">piedra✊</span>
+            </p>
+            <p id="gana-punto"> ¡Has ganado un punto!🥳🔥</p>
+        </div>
+        <button class="btn disabled" id="reiniciar">Reiniciar</button>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

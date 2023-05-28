@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="author" content="Yonnier David Rivas Mosquera" />
+    <meta name="copyright" content="Yonnier David Rivas Mosquera" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Cajero Automático</title>
+  </head>
+ <body>
+    <div class="app section">
+      <div class="container flex-center">
+        <h1>Cajero Automático</h1>
+        <div class="content flex-center">
+          <div class="cajero-img">
+            <img src="cajero.png" alt="Cajero Automático" />
+          </div>
+          <div class="parte-info">
+            <div class="informacion">
+              <form id="form" action="#" method="post">
+                <label for="monto">Ingresa el monto que deseas retirar:</label>
+                <br>
+                <input type="number" id="monto" name="monto" required />
+                <button type="submit">Retirar</button>
+              </form>
+            </div>
+            <div id="resultado"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

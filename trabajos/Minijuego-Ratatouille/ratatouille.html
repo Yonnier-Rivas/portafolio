@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="author" content="Yonnier David Rivas Mosquera" />
+    <meta name="copyright" content="Yonnier David Rivas Mosquera" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style..css">
+    <title>MINIJUEGO</title>
+
+</head>
+<body>
+           <!--  -->
+            <div class="ventana">
+                <h1>Remy el comelón</h1>
+                <br>
+            </div>
+
+            <div class="informacion">
+                <br>
+                <p>¡REMY ESTA HAMBRIENTO AYÚDALO A COMER TODAS LAS 🥕🧀🍞 GENERADOS PARA GANAR EL JUEGO!</p>
+                <p>(A-W-S-D)</p>
+            </div>
+
+            <div class="nivel">
+                <table>
+                    <tr>
+                        <th>NIVEL ACTUAL</th>
+                        <th>NIVEL MAXIMO</th>
+                    </tr>
+                    <tr>
+                        <td  id="nivelActual">1</td>
+                        <td id="nivelFinal">7</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="grafico">
+               <canvas width="750" height="650" id="cuadro"></canvas>
+            </div>
+
+            <div class="botons">
+                <button onclick="subirPlayer" id="arriba">⬆ ARRIBA</button>
+                <button onclick="bajarPlayer" id="abajo">⬇ ABAJO</button>
+                <button onclick="izquierdaPlayer" id="izquierda">⬅ IZQUIERDA</button>
+                <button onclick="derechaPlayer" id="derecha">➡ DERECHA</button>
+             </div>
+
+            
+
+            <script src="accion.js"></script>
+            
+</body>
+</html>

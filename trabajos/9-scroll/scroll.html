@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta name="author" content="Yonnier David Rivas Mosquera" />
+    <meta name="copyright" content="Yonnier David Rivas Mosquera" />
+    <meta charset="utf-8">
+    <title>Desplazamiento suave</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="menu">
+      <span class="logo">YRM</span>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#seccion1">Sección 1</a></li>
+        <li><a href="#seccion2">Sección 2</a></li>
+        <li><a href="#seccion3">Sección 3</a></li>
+      </ul>
+    </nav>
+
+    <header class="inicio" id="inicio">
+      <video autoplay loop plays-inline class="back-video"> 
+        <source src="img/video.mp4">
+      </video>
+      <div class="content">
+        <h1 class="title">La importancia de UX y UI en el diseño web</h1>
+        <button class="leer"> <a href="#seccion1" class="btn">Continua</a></button>
+      </div>
+    </header>
+
+    <div id="contenido">
+      <div class="seccion1" id="seccion1">
+        <h2>La experiencia de usuario (UX) y su importancia en el diseño web</h2>
+        <div id="container">
+          <p>La experiencia de usuario (UX) es un aspecto clave del diseño web, ya que se centra en cómo los usuarios interactúan con un sitio web y cómo se sienten al hacerlo. Un buen diseño de UX puede hacer que los usuarios se sientan cómodos y en control al navegar por un sitio web, lo que puede llevar a una mayor satisfacción y lealtad del usuario.</p>
+          <div class="img-card-container" data-aos="flip-left">
+            <img src="img/ima1.jpg" alt=""> 
+          </div>
+        </div>
+      </div>
+      
+      <div class="seccion2" id="seccion2">
+        <h2>La importancia del diseño de interfaz de usuario (UI)</h2>
+        <div id="container">
+          <div class="img-card-container" data-aos="flip-right">
+            <img src="img/ima2.png" alt="">
+          </div>
+          <p>El diseño de interfaz de usuario (UI) se refiere a la forma en que se presenta el contenido de un sitio web al usuario, incluyendo el diseño visual y la disposición de los elementos en la pantalla. Un buen diseño de UI puede mejorar la experiencia de usuario y hacer que el contenido sea más fácil de entender y utilizar.</p>
+        </div>
+      </div>
+      
+      <div class="seccion3" id="seccion3">
+        <h2>La relación entre UX y UI y cómo trabajan juntos</h2>
+        <div id="container">
+          <p>El diseño de UX y UI están estrechamente relacionados, ya que ambos se centran en mejorar la experiencia del usuario en un sitio web. Mientras que el diseño de UI se enfoca en la presentación visual de un sitio web, el diseño de UX se enfoca en cómo los usuarios interactúan con el contenido. Es importante que ambos aspectos trabajen juntos para crear una experiencia de usuario completa y satisfactoria.</p>
+          <div class="img-card-container" data-aos="flip-left">
+            <img src="img/ima3.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>Derechos reservados 2023 - Yonnier David Rivas Mosquera</p>
+    </footer>
+    <script src="desplazamiento.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

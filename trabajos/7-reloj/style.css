@@ -1,0 +1,86 @@
+*, *:before, *:after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='2150' height='1000' preserveAspectRatio='none' viewBox='0 0 1450 900'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1002%26quot%3b)' fill='none'%3e%3crect width='2450' height='900' x='0' y='0' fill='url(%23SvgjsLinearGradient1003)'%3e%3c/rect%3e%3cpath d='M-28.941012191828406 420.50130365775453L165.27388041840015 279.39592460442935 24.168501365074974 85.1810319942008-170.0463912451536 226.28641104752597z' fill='rgba(77%2c 206%2c 125%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M-66.7 551.77 a235.78 235.78 0 1 0 471.56 0 a235.78 235.78 0 1 0 -471.56 0z' fill='rgba(77%2c 206%2c 125%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M690.1456348372877 417.6811865500803L662.3589890134971 575.2670858387005 819.9448883021172 603.053731662491 847.7315341259078 445.4678323738709z' fill='rgba(77%2c 206%2c 125%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1017.096%2c723.151C1102.139%2c725.307%2c1183.145%2c683.642%2c1227.012%2c610.754C1272.266%2c535.561%2c1274.36%2c442.327%2c1232.542%2c365.171C1188.641%2c284.173%2c1109.217%2c222.182%2c1017.096%2c223.456C926.764%2c224.705%2c852.762%2c290.505%2c811.729%2c370.99C774.416%2c444.177%2c783.456%2c529.593%2c824.84%2c600.558C865.877%2c670.928%2c935.66%2c721.086%2c1017.096%2c723.151' fill='rgba(77%2c 206%2c 125%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M834.73 334.57 a258.45 258.45 0 1 0 516.9 0 a258.45 258.45 0 1 0 -516.9 0z' fill='rgba(77%2c 206%2c 125%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M161.2442932314268 713.8403666809378L335.99822275410816 901.24101265492 523.3988687280903 726.4870831322387 348.644939205409 539.0864371582564z' fill='rgba(77%2c 206%2c 125%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M472.24%2c343.963C520.45%2c345.009%2c573.895%2c341.606%2c600.273%2c301.239C628.552%2c257.963%2c622.78%2c200.017%2c594.643%2c156.649C568.725%2c116.701%2c519.858%2c104.168%2c472.24%2c103.896C424.012%2c103.62%2c372.759%2c114.219%2c347.388%2c155.235C320.929%2c198.009%2c325.733%2c253.935%2c353.483%2c295.883C378.738%2c334.058%2c426.478%2c342.97%2c472.24%2c343.963' fill='rgba(77%2c 206%2c 125%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1002'%3e%3crect width='1450' height='900' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='9.48%25' y1='-15.28%25' x2='90.52%25' y2='115.28%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1003'%3e%3cstop stop-color='rgba(0%2c 69%2c 73%2c 1)' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(0%2c 0%2c 0%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.container{
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  top: 50%;
+  border-radius: 30px;
+}
+
+.container *{
+  color: #ffffff;
+  font-family: "Roboto Mono",monospace;
+}
+
+.clock{
+  width: 100%;
+  background-color: rgba(255,255,255,0.06);
+  padding: 50px 25px;
+  border: 1.5px solid rgba(255,255,255,0.06);
+  box-shadow: 0 25px 30px rgba(0,0,0,0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 30px;
+}
+
+#day{
+  position: relative;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #e2ffff;
+  text-align: center;
+}
+
+.wrapper{
+  text-align: center;
+}
+
+#time{
+  font-size: 70px;
+  display: inline-block;
+}
+
+#midday{
+  display: inline-block;
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+    max-width: none;
+    transform: none;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 0;
+    margin: 5%;
+  }
+  
+  #day {
+    font-size: 4vw;
+  }
+  
+  #time {
+    font-size: 15vw;
+  }
+  
+  #midday {
+    font-size: 10vw;
+  }
+}
+
+
+
+

@@ -1,0 +1,86 @@
+body{
+    background-color: #e4d2a2;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.ventana{
+    position: relative;
+    border: solid 4px #fc7c40 ;
+    background-color: rgb(187, 155, 113);
+}
+
+
+h1{
+    font-size: 55px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:600;
+    color: rgb(255, 244, 244);
+    text-shadow: 7px 4px 5px hwb(19 25% 1%);
+}
+
+.informacion{
+    margin: 10px;
+}
+
+p{
+    font-size: 18px;
+    color: black;
+    font-family:'Arial Narrow', Arial, sans-serif; 
+}
+
+.nivel{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+th, td {
+    padding:7px;
+    text-align: center;
+    vertical-align: top;
+    font-family:'Arial Narrow', Arial, sans-serif; 
+    background: #e4d2a2;
+    color: #000;
+ }
+
+table{ 
+    border-collapse: separate;
+    border-spacing: 4px;
+    background: #fc7c40;
+    color: #fff;
+}
+
+
+.musica{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+.grafico{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.botones{
+    border-radius: 1rem;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+button{
+    border-radius: 5px;
+    padding: 5px; 
+    background-color:#fc7c40;
+}
